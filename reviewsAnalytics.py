@@ -28,3 +28,11 @@ for d in data:
 		good.append(d)
 print("一共有", len(good), "筆留言提到good")
 print(good[0]) #index = 0 的資料內容
+
+good1 = [1 for d in data if "good" in d]
+print("一共有", len(good1), "筆留言提到good")
+#good1 = good 快寫法
+
+bad = ["bad" in d for d in data]
+#output = [運算 for 變數 in 清單 (if 篩選條件)]
+print(len(bad))
